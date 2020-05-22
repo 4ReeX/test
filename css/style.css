@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
 html,
 body {
     position: relative;
@@ -20,8 +22,8 @@ body {
     padding: 0;
     image-rendering: smooth;
     background: rgb(27, 31, 38);
-    background: -webkit-gradient(linear, left top, right top, from(rgba(27, 31, 38, 1)), to(rgba(25, 26, 33, 1)));
     background: -o-linear-gradient(left, rgba(27, 31, 38, 1) 0%, rgba(25, 26, 33, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(27, 31, 38, 1)), to(rgba(25, 26, 33, 1)));
     background: linear-gradient(to right, rgba(27, 31, 38, 1) 0%, rgba(25, 26, 33, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1b1f26', endColorstr='#191a21', GradientType=1)
 }
@@ -142,7 +144,8 @@ div {
     justify-content: space-between;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start
+    align-items: flex-start;
+    z-index: 999999;
 }
 
 .logo {
@@ -403,8 +406,8 @@ div {
 }
 
 .autorize:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .2)), to(rgba(0, 0, 0, 0)));
     background: -o-linear-gradient(top, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .2)), to(rgba(0, 0, 0, 0)));
     background: linear-gradient(to bottom, rgba(0, 0, 0, .2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     border-top: 6px solid #fe6b3c;
@@ -552,6 +555,10 @@ a.rega {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 5%
+}
+.soc {
+    width: auto;
+    margin: 0 2px;
 }
 
 .grap1 {
@@ -773,48 +780,20 @@ a.rega {
 }
 
 .mouse {
-    background: #4e5559 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), color-stop(50%, #ffffff), to(#ffffff));
-    background: #4e5559 -o-linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
-    background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
     position: fixed;
     width: 52px;
     height: 88px;
     border-radius: 100px;
     background-size: 100% 200%;
-    -webkit-animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
-    animation: colorSlide 5s linear infinite, nudgeMouse 5s ease-out infinite;
     bottom: 30px;
     left: 50%;
     z-index: 999;
     margin-left: -26px
 }
-
-.mouse:before,
-.mouse:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto
+.mouse img {
+    width: 100%; 
 }
 
-.mouse:before {
-    width: 46px;
-    height: 82px;
-    background-color: #222a30;
-    border-radius: 100px
-}
-
-.mouse:after {
-    background-color: #fff;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    -webkit-animation: trackBallSlide 5s linear infinite;
-    animation: trackBallSlide 5s linear infinite
-}
 
 @-webkit-keyframes tudaSuda {
     0% {
@@ -840,385 +819,8 @@ a.rega {
     }
 }
 
-@-webkit-keyframes colorSlide {
-    0% {
-        background-position: 0% 100%
-    }
-    20% {
-        background-position: 0% 0%
-    }
-    21% {
-        background-color: #4e5559
-    }
-    29.99% {
-        background-color: #fff;
-        background-position: 0% 0%
-    }
-    30% {
-        background-color: #4e5559;
-        background-position: 0% 100%
-    }
-    50% {
-        background-position: 0% 0%
-    }
-    51% {
-        background-color: #4e5559
-    }
-    59% {
-        background-color: #fff;
-        background-position: 0% 0%
-    }
-    60% {
-        background-color: #4e5559;
-        background-position: 0% 100%
-    }
-    80% {
-        background-position: 0% 0%
-    }
-    81% {
-        background-color: #4e5559
-    }
-    90%,
-    100% {
-        background-color: #fff
-    }
-}
 
-@keyframes colorSlide {
-    0% {
-        background-position: 0% 100%
-    }
-    20% {
-        background-position: 0% 0%
-    }
-    21% {
-        background-color: #4e5559
-    }
-    29.99% {
-        background-color: #fff;
-        background-position: 0% 0%
-    }
-    30% {
-        background-color: #4e5559;
-        background-position: 0% 100%
-    }
-    50% {
-        background-position: 0% 0%
-    }
-    51% {
-        background-color: #4e5559
-    }
-    59% {
-        background-color: #fff;
-        background-position: 0% 0%
-    }
-    60% {
-        background-color: #4e5559;
-        background-position: 0% 100%
-    }
-    80% {
-        background-position: 0% 0%
-    }
-    81% {
-        background-color: #4e5559
-    }
-    90%,
-    100% {
-        background-color: #fff
-    }
-}
 
-@-webkit-keyframes trackBallSlide {
-    0% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    6% {
-        opacity: 1;
-        -webkit-transform: scale(.9) translateY(5px);
-        transform: scale(.9) translateY(5px)
-    }
-    14% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(40px);
-        transform: scale(.4) translateY(40px)
-    }
-    15%,
-    19% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(-20px);
-        transform: scale(.4) translateY(-20px)
-    }
-    28%,
-    29.99% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    30% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    36% {
-        opacity: 1;
-        -webkit-transform: scale(.9) translateY(5px);
-        transform: scale(.9) translateY(5px)
-    }
-    44% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(40px);
-        transform: scale(.4) translateY(40px)
-    }
-    45%,
-    49% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(-20px);
-        transform: scale(.4) translateY(-20px)
-    }
-    58%,
-    59.99% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    60% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    66% {
-        opacity: 1;
-        -webkit-transform: scale(.9) translateY(5px);
-        transform: scale(.9) translateY(5px)
-    }
-    74% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(40px);
-        transform: scale(.4) translateY(40px)
-    }
-    75%,
-    79% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(-20px);
-        transform: scale(.4) translateY(-20px)
-    }
-    88%,
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-}
-
-@keyframes trackBallSlide {
-    0% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    6% {
-        opacity: 1;
-        -webkit-transform: scale(.9) translateY(5px);
-        transform: scale(.9) translateY(5px)
-    }
-    14% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(40px);
-        transform: scale(.4) translateY(40px)
-    }
-    15%,
-    19% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(-20px);
-        transform: scale(.4) translateY(-20px)
-    }
-    28%,
-    29.99% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    30% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    36% {
-        opacity: 1;
-        -webkit-transform: scale(.9) translateY(5px);
-        transform: scale(.9) translateY(5px)
-    }
-    44% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(40px);
-        transform: scale(.4) translateY(40px)
-    }
-    45%,
-    49% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(-20px);
-        transform: scale(.4) translateY(-20px)
-    }
-    58%,
-    59.99% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    60% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-    66% {
-        opacity: 1;
-        -webkit-transform: scale(.9) translateY(5px);
-        transform: scale(.9) translateY(5px)
-    }
-    74% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(40px);
-        transform: scale(.4) translateY(40px)
-    }
-    75%,
-    79% {
-        opacity: 0;
-        -webkit-transform: scale(.4) translateY(-20px);
-        transform: scale(.4) translateY(-20px)
-    }
-    88%,
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(1) translateY(-20px);
-        transform: scale(1) translateY(-20px)
-    }
-}
-
-@-webkit-keyframes nudgeMouse {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    20% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px)
-    }
-    30% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    50% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px)
-    }
-    60% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    80% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px)
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-}
-
-@keyframes nudgeMouse {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    20% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px)
-    }
-    30% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    50% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px)
-    }
-    60% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    80% {
-        -webkit-transform: translateY(8px);
-        transform: translateY(8px)
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-}
-
-@-webkit-keyframes nudgeText {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    20% {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px)
-    }
-    30% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    50% {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px)
-    }
-    60% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    80% {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px)
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-}
-
-@keyframes nudgeText {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    20% {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px)
-    }
-    30% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    50% {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px)
-    }
-    60% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-    80% {
-        -webkit-transform: translateY(2px);
-        transform: translateY(2px)
-    }
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0)
-    }
-}
 
 @-webkit-keyframes colorText {
     21% {
@@ -1400,8 +1002,8 @@ a.rega {
 }
 
 .cbl {
-    -webkit-transform: rotate3d(1, 0, 0, 300deg) translateY(300px);
-    transform: rotate3d(1, 0, 0, 300deg) translateY(300px);
+    -webkit-transform:  rotate3d(1, 0, 0, 304deg) translateY(253px);
+    transform:  rotate3d(1, 0, 0, 304deg) translateY(253px);
     width: 450px;
     height: 450px;
     border-radius: 100%;
@@ -1430,8 +1032,8 @@ a.rega {
     border-radius: 100%;
     background-color: #363e49;
     background: rgb(54, 62, 73);
-    background: -webkit-gradient(linear, left top, right top, from(rgba(54, 62, 73, 1)), to(rgba(39, 45, 53, 1)));
     background: -o-linear-gradient(left, rgba(54, 62, 73, 1) 0%, rgba(39, 45, 53, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(54, 62, 73, 1)), to(rgba(39, 45, 53, 1)));
     background: linear-gradient(to right, rgba(54, 62, 73, 1) 0%, rgba(39, 45, 53, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#363e49', endColorstr='#272d35', GradientType=1)
 }
@@ -1711,3 +1313,10 @@ svg.fg {
 .mob-lines {
     display: none
 }
+    .phones{position:relative}.fl{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;height:130px;margin-top:-80px}.Grad1{background:-webkit-gradient(linear,right top, left top,from(#ff6044),color-stop(#bc7ea3),to(#39a3ff));background:-o-linear-gradient(right,#ff6044,#bc7ea3,#39a3ff);background:linear-gradient(270deg,#ff6044,#bc7ea3,#39a3ff);background-size:600% 600%;-webkit-animation:Grad 6s ease infinite;animation:Grad 6s ease infinite}@-webkit-keyframes Grad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes Grad{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@media screen and (max-width:414px){.line1,.line2{font-size:18px;word-break:break-all}.fl{margin-top:-120px;height:160px}}@media screen and (max-width:375px){.line1,.line2{font-size:18px;word-break:break-all}.fl{margin-top:-120px}.infograph{-webkit-transform:scale(.42);-ms-transform:scale(.42);transform:scale(.42);left:-73px;position:relative;top:-100px}}
+    
+    .zaglushka {
+        display: none;
+
+    }
+    .content {height: 100vh;}

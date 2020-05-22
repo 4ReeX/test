@@ -53,6 +53,7 @@ $('.logo').hover(
        function(){ $('.icon-logo').removeClass('start') }
 );
 
+
 swiper.on('slideChange', function() {
   console.log(swiper.activeIndex);
   var myNum = 2;

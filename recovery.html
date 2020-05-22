@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Affimob</title>
+  <!--<meta name="viewport" content="width=device-width">-->
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no' name='viewport' />
+  <!-- Link Swiper's CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <style>
+  .cd-user-modal {display: block!important;}
+  </style>
+</head>
+<body>
+  <div class="cd-user-modal is-visible"> <!-- все формы на фоне затемнения-->
+    <div class="cd-user-modal-container"> <!-- основной контейнер -->
+  <div id="cd-login selected"> <!-- форма входа -->
+      <form class="cd-form">
+        <h2 style="color: white;">Придумайте пароль</h2>
+    <p class="fieldset">
+        <label class="image-replace cd-password" for="signin-password">Пароль</label>
+        <input class="full-width has-padding has-border" id="password1" type="password"  placeholder="Пароль">
+        <a href="#0" class="hide-password">Скрыть</a>
+        <span class="cd-error-message">Это точно Ваш пароль?</span>
+    </p>
+    <p class="fieldset">
+        <label class="image-replace cd-password" for="signin-password">Подтверждение</label>
+        <input class="full-width has-padding has-border" id="password2" type="password"  placeholder="Подтверждение">
+        <a href="#0" class="hide-password">Скрыть</a>
+        <span class="cd-error-message">Это точно Ваш пароль?</span>
+    </p>
+    <p class="fieldset">
+        <input type="checkbox" id="remember-me" checked>
+        <label for="remember-me">Запомнить меня</label>
+    </p>
+    <p class="fieldset">
+        <input class="full-width" type="submit" value="Войти">
+    </p>
+    <p class="cd-form-bottom-message"><a href="index.php">Вернуться к входу</a></p>
+      </form>       
+      <!-- <a href="#0" class="cd-close-form">Close</a> -->
+  </div> <!-- конец блока с формой входа -->
+  </div> <!-- cd-user-modal-container -->
+ </div> <!-- cd-user-modal -->
+ <!-- JQUERY -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/main2.js"></script>
+
+</body>
+</html>

@@ -16,25 +16,12 @@ jQuery(document).ready(function($){
 		$( ".rega" ).click(function() {
 			$form_modal.addClass('is-visible');
 			signup_selected();
+			$('signin-email').focus();
 		});
 		$( ".autorize" ).click(function() {
 			$form_modal.addClass('is-visible');
 			login_selected();
 		});		
-		
-
-	//закрыть модальное окно
-	$('.cd-user-modal').on('click', function(event){
-		if( $(event.target).is($form_modal) || $(event.target).is('.cd-close-form') ) {
-			$form_modal.removeClass('is-visible');
-		}	
-	});
-	//закрыть модальное окно нажатье клавиши Esc 
-	$(document).keyup(function(event){
-    	if(event.which=='27'){
-    		$form_modal.removeClass('is-visible');
-	    }
-    });
 
 	//переключения  вкладки от одной к другой
 	$form_modal_tab.on('click', function(event) {
@@ -144,16 +131,4 @@ jQuery.fn.putCursorAtEnd = function() {
 
 
 
-var quad = document.getElementById('quad');
-window.addEventListener('DOMContentLoaded', WidthHeight(), false);
-function WidthHeight(){
-	var quadH = document.getElementById('quad').offsetHeight;
-	quad.style.width = quadH + "px";
-	console.log('quadH');
-};
-window.addEventListener("resize", WidthHeight);
-function WidthHeight(){
-	var quadH = document.getElementById('quad').offsetHeight;
-	quad.style.width = quadH + "px";
-	console.log('quadH');
-};
+

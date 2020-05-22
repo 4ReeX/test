@@ -156,6 +156,14 @@ ul {
 .cd-form label.cd-password {
   background-image: url("../img/cd-icon-password.svg");
 }
+.cd-form label.cd-telegram {
+  background-image: url("../img/cd-icon-telegram.png");
+  background-size: 100%;
+}
+.cd-form label.cd-skype {
+  background-image: url("../img/cd-icon-skype.png");
+  background-size: 100%;
+}
 .cd-form label a {
   color: #fe6b3c;
 }
@@ -185,7 +193,7 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1f26', endColorstr='#191a21',GradientType=1 );
 }
 .cd-form input.has-border:focus {
-  border-color: #343642;
+  border-color: #fe6b3c;
   color: #fff;
   box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);
   outline: none;
