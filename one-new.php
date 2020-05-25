@@ -2,6 +2,7 @@
 <div class="card-header">
 <h1 class="article__title">В России с 1 июня начнут снимать с туризма ограничения </h1>
 <span class="article__info-date-modified"> (обновлено: 21:11 25.05.2020)</span>
+<?php include 'share-btn.php'; ?>
 </div>
 <div class="card-body">
 <div class="article__block" data-type="text"><div class="article__text"><strong>МОСКВА, 25 мая — РИА Новости.</strong> Возможность поэтапного открытия туристического сезона в России связана с созданием условий, препятствующих распространению коронавируса, считает вице-премьер <a href="http://ria.ru/person_DmitrijjCHernyshenko/" target="_blank" data-auto="true">Дмитрий Чернышенко</a>.</div></div>

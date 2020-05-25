@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/media.css">
   <script type="text/javascript" src="js/modernizr.js"></script>
   <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  
 </head>
 <body> 
   <?php include 'header.php'; ?>
@@ -114,6 +115,28 @@ $(document).ready(function(){
   function link() {
     location.href = "news-open.php";
   };
+</script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"> </script>
+<script>
+$('.share-button').on('click',function(){  
+  $(this).addClass('open');
+})
+$( ".share-items" ).draggable({ 
+  axis: "x",
+  containment : ".share-items-wrapper"
+});
+$( ".share-item" ).on('click',function(){
+   $('.share-button').addClass('shared');
+   setTimeout(function(){
+    $('.share-button').addClass('thankyou');
+  }, 800);
+  setTimeout(function(){
+    $('.share-button').removeClass('open');
+    $('.share-button').removeClass('shared');
+    $('.share-button').removeClass('thankyou');
+  }, 2500);
+});
 </script>
 </body>
 </html>
