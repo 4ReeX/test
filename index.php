@@ -15,12 +15,14 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <!-- Link Swiper's CSS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/popup.css">
   <link rel="stylesheet" href="css/media.css">
   <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
   <style>
  input, input:before, input:after {
       -webkit-user-select: initial;
@@ -41,19 +43,13 @@
   </style>
 </head>
 <body> 
+  <?php include 'header.php'; ?>
   <div class="swiper-container">
+    
     <div class="swiper-wrapper" id="scroll1">
       <div class="swiper-slide">
       	<div class="wapclick ">WAPCLICK</div>
-      		<div class="header">
-      			<div class="logo">
-      				<img src="img/new-logo.svg" alt="" class="icon-logo">
-      				<img src="img/only-affimob.svg" alt="" class="text-logo"></div>
-      			   <a class="autorize cd-log" href="#0" onclick="focusMethod();">
-                <span class="icon-enter"></span>
-                <span class="auth">Авторизация</span>
-              </a>
-      		</div>
+
       		<div class="content for-ipad">
       			<div class="text-block">
       				<div class="text">
@@ -325,5 +321,12 @@
    <span itemprop="name">Аффимоб</span>
    Электронная почта: <span itemprop="email">info@affimob.com</span>
 </div>
+
+<script>
+$(document).ready(function(){
+         $("#index a").addClass('active');
+         $('#navlist').siblings('li').removeClass('active');
+});
+</script>
 </body>
 </html>

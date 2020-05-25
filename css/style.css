@@ -146,6 +146,11 @@ div {
     -ms-flex-align: start;
     align-items: flex-start;
     z-index: 999999;
+    background: rgb(27, 31, 38);
+    background: -o-linear-gradient(left, rgba(27, 31, 38, 1) 0%, rgba(25, 26, 33, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(27, 31, 38, 1)), to(rgba(25, 26, 33, 1)));
+    background: linear-gradient(to right, rgba(27, 31, 38, 1) 0%, rgba(25, 26, 33, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#1b1f26', endColorstr='#191a21', GradientType=1);
 }
 
 .logo {
@@ -1320,3 +1325,63 @@ svg.fg {
 
     }
     .content {height: 100vh;}
+
+.header {position: fixed; top: 0; width: 100%; left: 0;}
+.navbar {width: 100%;}
+a.nav-link {transition: all 1s ease-out; width: 0%;}
+a.nav-link.active {    border-bottom: 2px solid #e45d36; width: 100%; transition: all 1s ease-out; }
+a.nav-link.autorize.cd-log {    width: 100%;}
+.card {text-align: left;}
+strong {font-weight: 700;}
+.article__info-date {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #adadad;
+}
+.article__title {
+    font-size: 22px;
+    line-height: 35px;
+    color: #000;
+}
+.article__block {
+    margin-top: 25px;
+}
+.media {
+    padding: 20px 0px;
+}
+ .news-block {
+    margin: 20px auto;
+ }
+ .swiper-slide-block {
+    width: 100%;
+    height: auto;
+    overflow-y: auto;
+ }
+.news-container  {
+    margin: 100px auto 0;
+    display: block;
+    text-align: center;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  left: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
