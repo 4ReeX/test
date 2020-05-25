@@ -275,9 +275,10 @@ img.proc90 { width: 200px; }
     -o-transition: none;
     transition: none;
     /* border-bottom: 2px solid rgb(254, 107, 60, .0); */
-}.title {
+}
+.title {
     font-size: 36px;
-    margin: 10px auto;
+    margin: 57px auto -10px;
 }
 .text-container {
     background: none;
@@ -705,5 +706,55 @@ and (-webkit-device-pixel-ratio : 3) {
     .img-block {height: 45%;}
     .imgBox {    height: 180px;    max-width: 260px;}
     .phones-for-ipad{top: 0;}
+
+}
+@media screen and (max-width: 1024px) {
+    .header { }
+    .article__title {
+    font-size: 18px;
+    line-height: 16px;
+    color: #fff;
+    margin-top: 49px;
+    margin-bottom: 5px;
+    }
+    a.nav-link.autorize.cd-log {    width: 50px;    }
+    ul#navlist {    left: 5px;    position: absolute;    top: 7px;}
+    img.text-logo {width: 30%;max-width: auto; min-width: auto; margin: 0 5px;}
+    img.icon-logo {width: 12%; float: left;  margin: 0 5px;}
+    .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top: -15px;
+    transition: all 2s ease;
+    z-index: -1;
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    left: 50%;
+    transform: translate(-30%);
+}
+    /* width */
+::-webkit-scrollbar {
+  width: 0px;
+  margin-top: 40px;
+  left: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 }
