@@ -1396,6 +1396,12 @@ strong {font-weight: 700;}
 
 .btn-success:hover {
     color: #fff;
-     border-color: #fe6b3c;
+    border-color: #fe6b3c;
+    background: none;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show>.btn-success.dropdown-toggle {
+    color: #fff;
+    border-color: #fe6b3c;
     background: none;
 }
