@@ -32,9 +32,13 @@
         <div class="wapclick ">WAPCLICK</div>
           <div class="news-container col-sm-6">
           <?php include 'one-new.php'; ?>
+          <div class="card-footer"><button class="btn btn-success" onclick="link();">Подробнее</button></div></div>
            <?php include 'one-new.php'; ?>
+           <div class="card-footer"><button class="btn btn-success" onclick="link();">Подробнее</button></div></div>
             <?php include 'one-new.php'; ?>
+            <div class="card-footer"><button class="btn btn-success" onclick="link();">Подробнее</button></div></div>
              <?php include 'one-new.php'; ?>
+             <div class="card-footer"><button class="btn btn-success" onclick="link();">Подробнее</button></div></div>
         </div>
 
         </div>
@@ -105,6 +109,11 @@ $(document).ready(function(){
          $("#blog a").addClass('active');
          $('#navlist').siblings('li').removeClass('active');
 });
+</script>
+<script>
+  function link() {
+    location.href = "news-open.php";
+  };
 </script>
 </body>
 </html>

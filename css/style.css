@@ -1333,6 +1333,7 @@ a.nav-link.active {    border-bottom: 2px solid #e45d36; width: 100%; transition
 a.nav-link.autorize.cd-log {    width: 100%;}
 .card {text-align: left; background: #262831; color: #fff;}
 strong {font-weight: 700;}
+
 .article__info-date {
     font-size: 12px;
     line-height: 20px;
@@ -1347,6 +1348,7 @@ strong {font-weight: 700;}
 .article__block {
     margin-top: 25px;
 }
+.article__text a {color: #ea9a20;}
 .media {
     padding: 20px 0px;
 }
@@ -1384,4 +1386,16 @@ strong {font-weight: 700;}
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.btn-success {
+    color: #fff;
+     background: #fe6b3c;
+    border-color: none;
+}
+
+.btn-success:hover {
+    color: #fff;
+     border-color: #fe6b3c;
+    background: none;
 }
