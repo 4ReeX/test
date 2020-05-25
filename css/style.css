@@ -1331,7 +1331,7 @@ svg.fg {
 a.nav-link {transition: all 1s ease-out; width: 0%;}
 a.nav-link.active {    border-bottom: 2px solid #e45d36; width: 100%; transition: all 1s ease-out; }
 a.nav-link.autorize.cd-log {    width: 100%;}
-.card {text-align: left;}
+.card {text-align: left; background: #262831; color: #fff;}
 strong {font-weight: 700;}
 .article__info-date {
     font-size: 12px;
@@ -1342,7 +1342,7 @@ strong {font-weight: 700;}
 .article__title {
     font-size: 22px;
     line-height: 35px;
-    color: #000;
+    color: #fff;
 }
 .article__block {
     margin-top: 25px;
