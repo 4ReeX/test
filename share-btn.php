@@ -10,7 +10,7 @@
           <span class="fa fa-facebook"></span>      
         </a>
         <a href="#" class="share-item">
-          <span class="fa fa-instagram"></span>
+          <span class="fa fa-telegram"></span>
         </a>
       </div>
     </div>
