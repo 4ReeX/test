@@ -146,8 +146,6 @@
                   </div>
                   </div>
         </div>
-        
-        
                   
       </div>
       <div class="swiper-slide four">
@@ -161,7 +159,7 @@
       <div class="imgBox ww"></div>
       <div class="imgBox mw"></div>
     </div>
-    <div class="title tablet tablet-no">
+    <div class="title tablet tablet-no no-margin">
       <span class="white">С НАМИ</span>
       <span class="orange1">РАБОТАЮТ</span>
     </div>
@@ -302,8 +300,8 @@
 
 <script>
 $(document).ready(function(){
-         $("#index a").addClass('active');
-         $('#navlist').siblings('li').removeClass('active');
+         $("#index").addClass('active');
+         $('#navlist').siblings('a').removeClass('active');
 });
 </script>
 </body>

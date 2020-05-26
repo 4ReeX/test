@@ -1,7 +1,7 @@
 <div class="card news-block">
 <div class="card-header">
 <h1 class="article__title">В России с 1 июня начнут снимать с туризма ограничения </h1>
-<span class="article__info-date-modified"> (обновлено: 21:11 25.05.2020)</span>
+<span class="article__info-date"> (обновлено: 21:11 25.05.2020)</span>
 <?php include 'share-btn.php'; ?>
 </div>
 <div class="card-body">

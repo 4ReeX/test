@@ -55,12 +55,7 @@ $(".navbar-toggler").click(function(){
 </script>
 
 
-<script>
-$(document).ready(function(){
-         $("#blog a").addClass('active');
-         $('#navlist').siblings('li').removeClass('active');
-});
-</script>
+
 <script>
   function link() {
     location.href = "news-open.php";
@@ -86,5 +81,17 @@ $( ".share-item" ).on('click',function(){
     $('.share-button').removeClass('shared');
     $('.share-button').removeClass('thankyou');
   }, 2500);
+  setTimeout( function(){
+    $('.share-button').width(38 + "px");
+  }, 3000);
+});
+</script>
+
+<script>
+  $(window).on('load resize', function () {
+    $('.share-button').width(38 + "px");
+});
+   $(window).on('click', function () {
+    $('.share-button').width(100 + "px");
 });
 </script>

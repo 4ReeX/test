@@ -24,6 +24,11 @@
 
 <?php include 'modal.php'; ?>
 <?php include 'scripts.php'; ?>
-
+<script>
+$(document).ready(function(){
+         $("#blog").addClass('active');
+         $('#navlist').siblings('a').removeClass('active');
+});
+</script>
 </body>
 </html>

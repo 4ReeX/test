@@ -1,6 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
-
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 .nfo {display: none;}
 @media screen and (max-width: 414px) {
    .box1 {
@@ -25,6 +22,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
+        margin-bottom: -60px;
 }
 .one {    margin-top: -70px;}
 .gr {
@@ -33,67 +31,7 @@
 }
     .swiper-container {min-width: 320px;}
     .wapclick {font-size: 75vw; opacity: 0.1; }
-    .logo {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    left: 0;
-    position: absolute;
-    top: 10%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    }
     .header {z-index: 999999999;}
-    .text-logo {margin-top: 10px;}
-    .autorize {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 0px 10px;
-    border-right: 6px solid #e45d36;
-    border-top: none;
-    height: 30px;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    right: 0;
-    position: absolute;
-    top: 10px;
-    }
-    .icon-enter {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    color: #fff;
-    display: block;
-    background: url(../img/enter.png) no-repeat center center;
-    background-size: 100%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 5px;
-    }
     .content {-ms-flex-wrap: initial;flex-wrap: wrap;}
     .container {text-align: center;}
     span.auth {display: none;}
@@ -278,7 +216,7 @@ img.proc90 { width: 200px; }
 }
 .title {
     font-size: 36px;
-    margin: 57px auto -10px;
+        margin: 90px auto -10px;
 }
 .text-container {
     background: none;
@@ -709,32 +647,14 @@ and (-webkit-device-pixel-ratio : 3) {
 
 }
 @media screen and (max-width: 1024px) {
-    .header { }
     .article__title {
     font-size: 18px;
     line-height: 16px;
     color: #fff;
-    margin-top: 49px;
-    margin-bottom: 5px;
+    margin-top: 0px;
     }
-    a.nav-link.autorize.cd-log {    width: 50px;    }
-    ul#navlist {    left: 5px;    position: absolute;    top: 7px;}
-    img.text-logo {width: 30%;max-width: auto; min-width: auto; margin: 0 5px;}
-    img.icon-logo {width: 12%; float: left;  margin: 0 5px;}
-    .logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    top: 15px;
-    transition: all 2s ease;
-    z-index: -1;
-    width: 200px;
-    max-width: 200px;
-    min-width: 200px;
-    left: 50%;
-    transform: translate(-30%);
-}
+    img.text-logo {max-width: auto; min-width: auto; margin: 8px 0px 0px 0px; }
+    img.icon-logo {float: left;}
     /* width */
 ::-webkit-scrollbar {
   width: 0px;
@@ -759,10 +679,15 @@ and (-webkit-device-pixel-ratio : 3) {
 
 }
 
+
+
+@media screen and (max-width: 360px) and (max-height: 640px) {
+    .box1 {display: none;}
+    .swiper-slide {margin-top: 0px;}
+    .title {margin-top: 100px;}
+    .no-margin {margin: 0;}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .logo {
-        width: 250px;
-        top: 15px;
-        position: absolute;
-    }
+
 }
