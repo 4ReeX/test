@@ -83,8 +83,14 @@ $( ".share-item" ).on('click',function(){
     $('.share-button').removeClass('open');
     $('.share-button').removeClass('shared');
     $('.share-button').removeClass('thankyou');
-    $('.share-button').width(38 + "px");
+    $('.share-button').css("opacity", '0');
   }, 2500);
+  setTimeout(function(){
+  $('.share-button').width(38 + "px");
+  $('.share-button').css("opacity", '1');
+  }, 2900);
+
+
 });
 </script>
 
