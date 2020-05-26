@@ -65,6 +65,7 @@ $(".navbar-toggler").click(function(){
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"> </script>
 <script>
 $('.share-button').on('click',function(){  
+  $('.share-button').width(100 + "px");
   $(this).addClass('open');
 })
 $( ".share-items" ).draggable({ 
@@ -72,7 +73,9 @@ $( ".share-items" ).draggable({
   containment : ".share-items-wrapper"
 });
 $( ".share-item" ).on('click',function(){
+
    $('.share-button').addClass('shared');
+   
    setTimeout(function(){
     $('.share-button').addClass('thankyou');
   }, 800);
@@ -80,18 +83,13 @@ $( ".share-item" ).on('click',function(){
     $('.share-button').removeClass('open');
     $('.share-button').removeClass('shared');
     $('.share-button').removeClass('thankyou');
-  }, 2500);
-  setTimeout( function(){
     $('.share-button').width(38 + "px");
-  }, 2550);
+  }, 2500);
 });
 </script>
 
 <script>
   $(window).on('load resize', function () {
     $('.share-button').width(38 + "px");
-});
-   $(window).on('click', function () {
-    $('.share-button').width(100 + "px");
 });
 </script>
