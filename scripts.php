@@ -83,7 +83,7 @@ $( ".share-item" ).on('click',function(){
   }, 2500);
   setTimeout( function(){
     $('.share-button').width(38 + "px");
-  }, 3000);
+  }, 2500);
 });
 </script>
 
