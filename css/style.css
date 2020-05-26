@@ -1350,7 +1350,7 @@ a.nav-link.autorize.cd-log {    width: 100%;}
 strong {font-weight: 700;}
 
 .article__block {font-family: Arial, Helvetica, sans-serif!important;
-    font-stretch: normal;}
+    font-stretch: normal; line-height: 1.4;}
 .article__info-date {
     font-size: 12px;
     line-height: 20px;
