@@ -5,7 +5,7 @@
   <?php include 'header.php'; ?>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide-block flex-start" style="height: 100%; overflow-y: auto; -webkit-overflow-scrolling:touch;">
+      <div class="swiper-slide-block flex-start" style="height: 100%; overflow-y: auto; -webkit-overflow-scrolling:touch; transform: translateZ(0); ">
         <div class="wapclick ">WAPCLICK</div>
           <div class="news-container col-sm-6 col-md-12 col-lg-6">
           <?php include 'one-new.php'; ?>
