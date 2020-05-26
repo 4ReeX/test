@@ -12,7 +12,7 @@
         </div>
         <!--Пагинация-->
         <div class="controls">
-          <a href="" class="prev float-left"><i class="ti ti-arrow-left "></i> Предыдущая</a>
+        <a href="" class="prev float-left"><i class="ti ti-arrow-left "></i> Предыдущая</a>
         <a href="" class="next float-right">Следующая <i class="ti ti-arrow-right"></i></a>
         </div>
         
