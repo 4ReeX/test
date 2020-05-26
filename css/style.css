@@ -1575,3 +1575,31 @@ a:hover {
     color: #fff;
     text-decoration: underline;
 }
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #ffffff;
+    background: #262831;
+    border: none;
+}
+.page-link:hover {
+	background: #e45d36;
+	color: #000;
+}
+.page-item.disabled .page-link {
+    color: #666;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #1c1c21;
+    border-color: #dee2e6;
+}
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #e45d36;
+    border-color: #007bff;
+}
