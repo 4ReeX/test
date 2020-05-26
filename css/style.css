@@ -1606,3 +1606,6 @@ a:hover {
     background-color: #e45d36;
     border-color: #007bff;
 }
+
+a.prev, a.next {font-size: 12px; color: #fff; display: flex;flex-direction: row; justify-content: center; align-items: center;}
+a.prev i, a.next i {color: #e45d36; margin: 0px 5px; font-size: 16px; }
