@@ -1357,9 +1357,10 @@ strong {font-weight: 700;}
 }
 .article__title {
     font-size: 22px;
-    line-height: 35px;
+    line-height: 20px;
     color: #fff;
     max-width: 75%;
+    padding-bottom: 10px;
 }
 .article__block {
     margin-top: 25px;
