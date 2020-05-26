@@ -7,7 +7,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide-block flex-start" style="height: auto; overflow-y: auto;">
         <div class="wapclick ">WAPCLICK</div>
-          <div class="news-container col-sm-6">
+          <div class="news-container col-sm-6 col-md-12 col-lg-6">
           <?php include 'one-new.php'; ?>
           <div class="card-footer"><button class="btn btn-success" onclick="link();">Подробнее</button></div></div>
            <?php include 'one-new.php'; ?>
